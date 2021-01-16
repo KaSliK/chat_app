@@ -20,10 +20,11 @@ class _ChatScreenState extends State<ChatScreen> {
     }, onLaunch: (msg) {
       print(msg);
       return;
-    },onResume: (msg) {
+    }, onResume: (msg) {
       print(msg);
       return;
     });
+    fbm.subscribeToTopic('chat');
     super.initState();
   }
 

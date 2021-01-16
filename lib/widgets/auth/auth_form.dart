@@ -97,6 +97,8 @@ class _AuthFormState extends State<AuthForm> {
                   if (!_isLogin)
                     TextFormField(
                       key: ValueKey('username'),
+                      autocorrect: true,
+                      textCapitalization: TextCapitalization.words,
                       validator: (value) {
                         if (value.isEmpty || value.length < 4) {
                           return 'Please enter at least 4 characters.';
